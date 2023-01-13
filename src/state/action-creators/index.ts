@@ -4,7 +4,7 @@ import { ActionType } from '../action-types';
 import { Action } from '../actions';
 
 export const searchRepositories = (term: string) => {
-  return async (dispatch: Dispatch<Action>) => {
+  return async (dispatch: Dispatch<Action>) => {   // Dispatch is from Redux, but Action is from ../actions
     dispatch({
       type: ActionType.SEARCH_REPOSITORIES,
     });
